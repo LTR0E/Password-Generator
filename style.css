@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,500;1,500&family=Quicksand:wght@300..700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    text-align: center;
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+}
+
+.heading-main {
+    text-shadow: 2px 2px 10px rgba(245, 245, 245, 0.404);
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+
+#input{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 15em;
+    font-size: 16px;
+
+}
+#length{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    
+}
+#pass-length{
+    text-shadow: 2px 2px 10px rgba(245, 245, 245, 0.404);
+    font-size: 1em;
+}
+#result{
+    text-shadow: 2px 2px 10px rgba(245, 245, 245, 0.404);
+    font-size: 1em;
+}
+#generate-button{
+    padding: 12px;
+    margin: 10px;
+    width: 200px;
+    border: 1px solid rgb(1, 116, 91);
+    border-radius: 20px;
+
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#generate-button:hover{
+    color: #ffffff;
+    background: rgb(1, 116, 91);
+    border: 1px solid rgb(1, 116, 91);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px rgb(1, 116, 91), 0 0 20px rgb(1, 116, 91), 0 0 40px rgb(1, 116, 91);
+}
+
+#password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#copy-button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid rgb(84, 86, 182);
+    transition: all 0.5s ease-in-out;
+    user-select: none;
+    margin: 10px;
+}
+
+#copy-button:hover{
+    color: #ffffff;
+    background: rgb(84, 86, 182);
+    border: 1px solid rgb(84, 86, 182);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px rgb(84, 86, 182), 0 0 20px rgb(84, 86, 182), 0 0 50px rgb(84, 86, 182);
+
+      
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#length-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+#increment-button, #decrement-button {
+    padding: 10px;
+    margin: 5px;
+    width: 30px;
+    height : auto;
+    border: 1px solid #ffffff80;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#increment-button:hover, #decrement-button:hover {
+    background-color: rgb(1, 116, 91);
+}
+
+@media screen and (max-width: 630px) {
+    #copy-button {
+        position: relative;
+        padding: 12px;
+        margin: 0px;
+        margin-left: 0;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(115, 118, 255);
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: all 0.5s ease-in-out;
+    user-select: none;
+  }
+  
+button:hover {
+    color: #ffffff;
+    background: rgb(1, 116, 91);
+    border: 1px solid rgb(1, 116, 91);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px rgb(1, 116, 91), 0 0 20px rgb(1, 116, 91), 0 0 50px rgb(1, 116, 91),
+      0 0 100px rgb(1, 116, 91);
+  }
+  
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+#character-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}

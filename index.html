@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="x-icon" href="images/logo.ico">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class = "heading-main">Password Generator</h1>
+        
+        <div class="password-container">
+            
+            <p id="result">Result:</p>
+            <input type="text" id="input" class="bg-[#222630] px-4 py-3 outline-none w-[280px] text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]" placeholder="Password will appear here...">
+            <button id="copy-button">Copy Password</button>
+        </div>
+        
+        <p id="pass-length">Password Length:</p>
+        
+        <div id="length-buttons">
+            <button id="increment-button">+</button>
+            <input type="number" id="length" placeholder="Length">
+            <button id="decrement-button">-</button>
+        </div>
+
+        <p id="pass-character">Password Character Set:</p>
+        <div id="checkbox-wrapper">
+            <input type ="checkbox" checked="checked" id="lowercase-checkbox">Lowercase</input>
+            <div class="checkmark"></div>
+            <input type ="checkbox" checked="checked" id="uppercase-checkbox">Uppercase</input>
+            <div class="checkmark"></div>
+            <input type ="checkbox" checked="checked" id="numeric-checkbox">Numbers</input>
+            <div class="checkmark"></div>
+            <input type ="checkbox" checked="checked" id="special-checkbox">Symbols</input>
+            <div class="checkmark"></div>
+        </div>
+
+        <button id="generate-button">Generate Password</button>
+        
+    </main>
+</body>
+</html>
